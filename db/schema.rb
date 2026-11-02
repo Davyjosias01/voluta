@@ -13,6 +13,15 @@
 ActiveRecord::Schema[8.1].define(version: 2026_11_02_093440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+  create_table "list_users", force: :cascade do |t|
+    t.bigint "list_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["list_id"], name: "index_list_users_on_list_id"
+    t.index ["user_id"], name: "index_list_users_on_user_id"
+  end
+
   create_table "lists", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
