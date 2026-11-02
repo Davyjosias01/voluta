@@ -13,6 +13,11 @@
 ActiveRecord::Schema[8.1].define(version: 2026_11_02_093440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+  create_table "lists", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "scores", force: :cascade do |t|
     t.string "name"
