@@ -1,3 +1,6 @@
+#Arquivo utilizado pelo Kamal, que é uma gem utilizada para deploy
+#este projeto ainda não possui deploy.
+
 # Name of your application. Used to uniquely configure containers.
 service: voluta
 
