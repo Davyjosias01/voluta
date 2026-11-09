@@ -8,3 +8,29 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb; /* Uma bordinha discreta opcional */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.discrete-logo {
+  height: 55px; /* Controla a altura para ficar pequena */
+  width: auto;  /* Mantém a proporção original da imagem */
+  display: block;
+  opacity: 0.9; /* Deixa a imagem ligeiramente mais suave/discreta */
+  transition: opacity 0.2s ease;
+}
+
+.discrete-logo:hover {
+  opacity: 1; /* Retorna ao brilho total ao passar o rato */
+}
